@@ -3,6 +3,8 @@
 Ranking de jugadores de *The Binding of Isaac: Rebirth* (appid `250900`) por logros de Steam.
 Sin login: cualquiera pega su nick y aparece.
 
+**https://kvothesson.github.io/isaac-ranking/**
+
 ## Cómo se ordena
 
 1. **Cantidad de logros**, de mayor a menor.
