@@ -104,7 +104,7 @@ tr.complete{background:linear-gradient(90deg,rgba(217,164,65,.09),transparent 60
 .who img,.ph{width:28px;height:28px;border-radius:4px;background:#000;flex:0 0 auto}
 .ph{display:inline-block;background:#241d1f;border:1px solid var(--line)}
 .who b{font-weight:600}
-.who > div{min-width:0;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.who > div{min-width:186px;display:flex;flex-wrap:wrap;align-items:center;gap:6px}
 .who .bar{flex:1 0 100%}
 .tag{
   display:inline-flex;align-items:center;font-size:10px;letter-spacing:.08em;
@@ -190,6 +190,7 @@ footer{max-width:960px;margin:44px auto;padding:0 20px;color:var(--dim);
   .c-num .tot{font-size:11px}
   .c-when{width:96px;font-size:12px}
   .bar{max-width:130px}
+  .who > div{min-width:136px}
 }
 
 @media (max-width:560px){
@@ -199,7 +200,8 @@ footer{max-width:960px;margin:44px auto;padding:0 20px;color:var(--dim);
   .who{gap:7px}
   .who img,.ph{width:22px;height:22px}
   .who b{font-size:13px;overflow-wrap:anywhere}
-  .who > div{gap:4px}
+  .who > div{gap:4px;min-width:116px}
+  .bar{max-width:110px}
   .tag{padding:1px 4px;font-size:9px}
   .tag .ic{width:10px;height:10px}
   tr.complete .bar{display:none}
