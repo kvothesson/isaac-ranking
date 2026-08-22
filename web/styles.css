@@ -58,6 +58,8 @@ button:disabled{opacity:.45;cursor:wait}
 
 .hint{margin:10px 0 0;color:var(--dim);font-size:12px;line-height:1.6}
 .hint b{color:var(--text);font-weight:600}
+.hint code{background:#241d1f;border:1px solid var(--line);border-radius:3px;
+  padding:0 4px;color:var(--text);font-size:11px}
 
 .feedback{margin-top:14px;display:flex;flex-direction:column;gap:6px}
 .msg{display:flex;align-items:center;gap:9px;padding:8px 12px;border-radius:5px;
