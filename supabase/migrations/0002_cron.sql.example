@@ -1,0 +1,25 @@
+-- Reemplazar <SERVICE_ROLE_KEY> y correr en el SQL editor. El project ref ya esta puesto.
+-- No commitear este archivo con la key adentro.
+
+select cron.schedule(
+  'isaac-sync-global', '17 5 * * *',   -- todos los dias 05:17 UTC
+  $$
+  select net.http_post(
+    url     := 'https://dokgvvnxixtrrfvexuke.supabase.co/functions/v1/sync-global',
+    headers := '{"Content-Type":"application/json","Authorization":"Bearer <SERVICE_ROLE_KEY>"}'::jsonb
+  );
+  $$
+);
+
+select cron.schedule(
+  'isaac-sync-players', '*/20 * * * *', -- una tanda cada 20 minutos
+  $$
+  select net.http_post(
+    url     := 'https://dokgvvnxixtrrfvexuke.supabase.co/functions/v1/sync-players',
+    headers := '{"Content-Type":"application/json","Authorization":"Bearer <SERVICE_ROLE_KEY>"}'::jsonb
+  );
+  $$
+);
+
+-- Para ver como vienen:  select * from cron.job_run_details order by start_time desc limit 20;
+-- Para borrar:           select cron.unschedule('isaac-sync-players');

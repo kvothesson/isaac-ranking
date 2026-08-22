@@ -1,0 +1,93 @@
+<!-- Recortado a 10 logros: el caso que prueba es un perfil publico con
+     cero desbloqueados. El XML original de Steam trae los 641. -->
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><playerstats>
+	<privacyState>public</privacyState>
+	<visibilityState>3</visibilityState>
+	<game>
+		<gameFriendlyName><![CDATA[250900]]></gameFriendlyName>
+		<gameName><![CDATA[The Binding of Isaac: Rebirth]]></gameName>
+		<gameLink><![CDATA[https://steamcommunity.com/app/250900]]></gameLink>
+		<gameIcon><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/16d46c8630499bfc54d20745ac90786a302cd643.jpg]]></gameIcon>
+		<gameLogo><![CDATA[https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/capsule_184x69.jpg?t=1731977365]]></gameLogo>
+		<gameLogoSmall><![CDATA[https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/250900/capsule_184x69.jpg?t=1731977365]]></gameLogoSmall>
+	</game>
+	<player>
+		<steamID64>76561198023414915</steamID64>
+		<customURL><![CDATA[St4ck]]></customURL>
+	</player>
+	<stats>
+		<hoursPlayed>0</hoursPlayed>
+	</stats>
+	<achievements>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/a36d7e92df7e991758907a75dfa55d36b52548c4.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[Magdalene]]></name>
+			<apiname><![CDATA[1]]></apiname>
+			<description><![CDATA[Unlocked a new character.]]></description>
+		</achievement>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/33658122e504ae8670bbb70686468e1276902cc4.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[Cain]]></name>
+			<apiname><![CDATA[2]]></apiname>
+			<description><![CDATA[Unlocked a new character.]]></description>
+		</achievement>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/8196f7a0a6ed79c2fbeffa58f17c9508eec99d12.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[Judas]]></name>
+			<apiname><![CDATA[3]]></apiname>
+			<description><![CDATA[Unlocked a new character.]]></description>
+		</achievement>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/be9b9b5460cecea8cd08966011993a94f6009f28.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[The Womb]]></name>
+			<apiname><![CDATA[4]]></apiname>
+			<description><![CDATA[Chapter 4 - The Womb unlocked.]]></description>
+		</achievement>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/22fb2aaff6a35cfec03f7d2dd694bb5fb8770dbd.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[The Harbingers]]></name>
+			<apiname><![CDATA[5]]></apiname>
+			<description><![CDATA[The horsemen are loose.]]></description>
+		</achievement>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/284bc31a579615dcf933215379f81ea011f9cd68.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[A Cube of Meat]]></name>
+			<apiname><![CDATA[6]]></apiname>
+			<description><![CDATA[Unlocked a new item.]]></description>
+		</achievement>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fe25808e41be017139e4d59e852d52051438080f.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[The Book of Revelations]]></name>
+			<apiname><![CDATA[7]]></apiname>
+			<description><![CDATA[Unlocked a new item.]]></description>
+		</achievement>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/3bf267e579321b40f9cf2dc9239f369fb64a42ed.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[A Noose]]></name>
+			<apiname><![CDATA[8]]></apiname>
+			<description><![CDATA[Unlocked a new item.]]></description>
+		</achievement>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/15676e97dfa025f754bd2bf9dc7c0ba0e7b4cd7b.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[The Nail]]></name>
+			<apiname><![CDATA[9]]></apiname>
+			<description><![CDATA[Unlocked a new item.]]></description>
+		</achievement>
+		<achievement closed="0">
+			<iconClosed><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/a042cb78d919a2e77459116e61571d34139c2490.jpg]]></iconClosed>
+			<iconOpen><![CDATA[https://shared.akamai.steamstatic.com/community_assets/images/apps/250900/fc5c40f3429120652211c9e95570752ba5810f22.jpg]]></iconOpen>
+			<name><![CDATA[A Quarter]]></name>
+			<apiname><![CDATA[10]]></apiname>
+			<description><![CDATA[Unlocked a new item.]]></description>
+		</achievement>
+	</achievements>
+</playerstats>
