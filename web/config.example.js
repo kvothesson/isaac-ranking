@@ -6,5 +6,5 @@
 // Sin este archivo el sitio arranca en modo demo contra web/demo.json.
 window.ISAAC_CONFIG = {
   SUPABASE_URL: "https://TU_PROJECT_REF.supabase.co",
-  SUPABASE_ANON_KEY: "TU_ANON_KEY",
+  SUPABASE_ANON_KEY: "TU_PUBLISHABLE_KEY", // sb_publishable_...
 };
