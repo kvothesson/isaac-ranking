@@ -1,0 +1,19 @@
+.DS_Store
+node_modules/
+
+# Nada de credenciales en el repo.
+# config.js lleva la anon key del proyecto: lo escribe el workflow en el deploy
+# desde las variables del repo, y para local se copia de config.example.js.
+web/config.js
+.env
+.env.*
+
+# El SQL del cron lleva la service_role key pegada a mano. Solo se versiona
+# el .example, con el placeholder.
+supabase/migrations/*cron*.sql
+
+supabase/.temp/
+supabase/.branches/
+
+# Lo genera test/demo.mts en un comando, no hace falta versionarlo (160 KB).
+web/demo.json
