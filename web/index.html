@@ -56,12 +56,18 @@
   <label for="inputs">Add a Steam profile</label>
   <div class="add-row">
     <textarea id="inputs" rows="2" spellcheck="false" autocapitalize="off"
-      placeholder="nickname, profile URL or steamid64&#10;one per line"></textarea>
+      placeholder="steamcommunity.com/id/yourname&#10;one per line"></textarea>
     <button id="go">
       <svg class="ic"><use href="#i-plus"/></svg><span>Add</span>
     </button>
   </div>
+  <!-- El nombre que se ve en el perfil NO sirve para buscar: es la custom URL lo
+       que identifica. steamcommunity.com/id/boop es un tal kazor, mientras que el
+       jugador que se llama "boop" vive en /id/bisnap. Sin esta aclaracion la gente
+       carga desconocidos sin darse cuenta. -->
   <p class="hint">
+    Paste your <b>profile link</b>, or the part after <code>/id/</code>.
+    Your display name will not work, it is a different thing.
     Up to 10 at a time. No login needed, but the profile must have
     <b>game details set to public</b>.
   </p>
