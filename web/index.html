@@ -66,7 +66,8 @@
 <header class="top">
   <h1>ISAAC <span>RANKING</span></h1>
   <p class="sub">
-    Ranked by achievements unlocked. Ties are broken by rarity:
+    Achievement leaderboard for <b>The Binding of Isaac: Rebirth</b>.
+    Ranked by achievements unlocked, ties broken by rarity:
     the fewer people have it, the more it is worth.
   </p>
   <ul class="stats" id="stats"></ul>
@@ -125,9 +126,57 @@
   <div id="detail-body"></div>
 </dialog>
 
+<!-- Contenido estatico de verdad. La tabla la arma JavaScript, asi que sin esto
+     el HTML que recibe un buscador es practicamente una pagina en blanco: 94
+     palabras y sin mencionar el nombre del juego. Ademas le sirve a quien entra
+     por primera vez y no sabe que esta mirando. -->
+<section class="explica">
+  <h2>How the ranking works</h2>
+  <p>
+    Players are sorted by how many of the 641 Steam achievements they have unlocked in
+    <b>The Binding of Isaac: Rebirth</b>, including the Afterbirth, Afterbirth+ and
+    Repentance content. When two players are tied on count, the one holding the rarer
+    achievements ranks higher. Rarity is weighted as <code>log10(100 / global unlock %)</code>,
+    because Isaac's spread is compressed: the rarest achievement sits at 2.4% and nothing
+    is under 1%, so a flat weight barely separates anyone.
+  </p>
+
+  <h2>Dead God is not the same as 641/641</h2>
+  <p>
+    <b>Dead God</b> is a single Steam achievement, held by roughly 3.4% of players, awarded
+    for filling every completion mark in the game. Owning all 641 achievements is a different
+    thing, because several of them have nothing to do with completion marks. <b>Win Online
+    Daily</b> only asks you to win one online daily run, and at 2.4% it is rarer than Dead God
+    itself. That is why both show up as separate badges instead of one number.
+  </p>
+
+  <h2>Adding a Steam profile</h2>
+  <p>
+    No account and no login. Paste a Steam profile link, the part after <code>/id/</code>, or a
+    steamid64. The display name shown on a profile is not the same as its custom URL, so that
+    one will not work. The profile needs <b>game details set to public</b>, otherwise Steam
+    returns nothing at all. Once a profile is in the ranking it re-syncs on its own, so you
+    only have to paste it once.
+  </p>
+</section>
+
 <footer>
   <p>Public Steam data &middot; appid 250900 &middot; not affiliated with Nicalis or Valve</p>
 </footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Isaac Ranking",
+  "url": "https://isaac.kvothesson.com/",
+  "applicationCategory": "GameApplication",
+  "operatingSystem": "Any",
+  "description": "Achievement leaderboard for The Binding of Isaac: Rebirth, ranked by Steam achievements unlocked with rarity as the tiebreak.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "about": { "@type": "VideoGame", "name": "The Binding of Isaac: Rebirth" }
+}
+</script>
 
 <script src="config.js"></script>
 <script src="app.js"></script>
