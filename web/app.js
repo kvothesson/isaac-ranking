@@ -137,6 +137,7 @@ const ESTADOS = {
   privado: { c: "warn", i: "lock", t: "game details are private on this profile" },
   no_existe: { c: "bad", i: "question", t: "profile not found" },
   invalido: { c: "bad", i: "x", t: "not a Steam nickname, URL or steamid64" },
+  sin_logros: { c: "warn", i: "trophy", t: "no achievements unlocked yet, nothing to rank" },
   steam_saturado: { c: "bad", i: "clock", t: "Steam is rate limiting us, try again later" },
   error: { c: "bad", i: "x", t: "something failed" },
 };

@@ -49,7 +49,7 @@ Casos verificados contra respuestas reales (los XML están en `test/fixtures/`):
 |---|---|---|
 | perfil público con logros | 641 logros, `closed` + `unlockTimestamp` | lo suma al ranking |
 | perfil con Dead God | logro `637` en `closed="1"` | sello dorado + fecha en que lo sacó |
-| perfil público sin logros | 641 logros, todos `closed="0"` | entra con 0/641, es válido |
+| perfil público sin logros | 641 logros, todos `closed="0"` | se rechaza en el alta: 0/641 no aporta nada al ranking |
 | perfil privado | solo `<privacyState>private</privacyState>`, sin steamid64 | avisa y no guarda nada |
 | vanity inexistente | `<response><error>` | avisa "no encontramos ese perfil" |
 | steamid64 inventado | HTML de error, no XML | avisa "no encontramos ese perfil" |

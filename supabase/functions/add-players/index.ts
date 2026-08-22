@@ -70,6 +70,15 @@ Deno.serve(async (req) => {
         continue;
       }
 
+      // 0/641 es un perfil valido pero no aporta nada al ranking: se rechaza en
+      // el alta para que la tabla no se llene de filas vacias. Un jugador que ya
+      // estaba cargado y sigue en 0 no se toca aca (eso lo maneja el cron).
+      if (!prev && stats.achievements.every((a) => !a.closed)) {
+        results.push({ input, status: "sin_logros", detalle: "el perfil no tiene ningun logro desbloqueado" });
+        await db.from("submissions").insert({ ip_hash: ip, input, ok: false });
+        continue;
+      }
+
       cat = await ensureAchievements(db, stats.achievements, cat);
       const profile = await fetchProfile(stats.steamid64);
       const player = await upsertPlayer(db, stats, profile, cat);
