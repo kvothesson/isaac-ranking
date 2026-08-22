@@ -5,7 +5,10 @@ import { fetchProfile, fetchStats, parseInput, sleep } from "../_shared/steam.ts
 import { CORS, admin, ensureAchievements, hashIp, json, loadCatalog, upsertPlayer } from "../_shared/db.ts";
 
 const MAX_POR_REQUEST = 10;
-const MAX_POR_DIA = 30;
+// Subido de 30 a 60: gente detras de la misma IP compartida (redes moviles,
+// oficinas con CGNAT) no deberia quedar bloqueada por culpa de otros en un
+// pico de trafico real.
+const MAX_POR_DIA = 60;
 const COOLDOWN_MIN = 60; // un jugador no completo se puede refrescar 1 vez por hora
 
 Deno.serve(async (req) => {
