@@ -150,6 +150,7 @@ async function agregar() {
   if (!inputs.length) return;
 
   const btn = $("#go");
+  const original = btn.innerHTML;
   btn.disabled = true;
   $("#feedback").innerHTML = "";
 
@@ -158,6 +159,19 @@ async function agregar() {
     btn.disabled = false;
     return;
   }
+
+  // Cada perfil nuevo se consulta uno por uno contra Steam, asi que una tanda de
+  // 10 puede tardar de verdad medio minuto. Sin este aviso, el boton solo se ve
+  // atenuado y sin texto: parece roto, e invita a clickear de nuevo.
+  let segundos = 0;
+  btn.innerHTML = `${icono("clock")}<span>Checking…</span>`;
+  const tic = setInterval(() => {
+    segundos++;
+    if (segundos > 4) {
+      btn.querySelector("span").textContent =
+        inputs.length > 1 ? `Checking ${inputs.length} profiles…` : "Checking…";
+    }
+  }, 1000);
 
   try {
     const { ok, data } = await fn("add-players", { inputs });
@@ -185,7 +199,9 @@ async function agregar() {
   } catch (e) {
     $("#feedback").innerHTML = msg("bad", "x", "Connection failed", e.message);
   } finally {
+    clearInterval(tic);
     btn.disabled = false;
+    btn.innerHTML = original;
   }
 }
 
