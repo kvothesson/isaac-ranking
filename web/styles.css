@@ -153,6 +153,18 @@ dialog::backdrop{background:rgba(0,0,0,.75)}
 .rare-list em{margin-left:auto;color:var(--gold);font-style:normal;font-variant-numeric:tabular-nums}
 .rare-list small{display:block;color:var(--dim);font-size:11px}
 
+/* Bloque de texto explicativo del final. Sobrio a proposito: informa a quien
+   llega por primera vez y le da algo que indexar a los buscadores, sin pelearle
+   protagonismo a la tabla. */
+.explica{max-width:760px;margin:56px auto 0;padding:0 20px;color:var(--dim);font-size:13px;line-height:1.75}
+.explica h2{font-size:12px;text-transform:uppercase;letter-spacing:.12em;
+  color:var(--text);margin:28px 0 8px}
+.explica h2:first-child{margin-top:0}
+.explica p{margin:0}
+.explica b{color:var(--text);font-weight:600}
+.explica code{background:#241d1f;border:1px solid var(--line);border-radius:3px;
+  padding:0 4px;color:var(--text);font-size:12px}
+
 footer{max-width:960px;margin:44px auto;padding:0 20px;color:var(--dim);
   font-size:11px;text-align:center;letter-spacing:.04em}
 
